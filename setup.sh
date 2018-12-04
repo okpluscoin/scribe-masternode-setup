@@ -39,7 +39,7 @@ useradd -m -s /bin/bash scribeuser
 
 
 
-su - scribeuser bash -c 'wget -O 01vpsscribe.sh http://dl.madstu.net/01vpsscribe.sh && sh 01vpsscribe.sh'
+su - scribeuser bash -c 'wget -O 01vpsscribe.sh https://raw.githubusercontent.com/okpluscoin/scribe-masternode-setup/master/vps-scribe.sh && sh 01vpsscribe.sh'
 
 printf "
 
