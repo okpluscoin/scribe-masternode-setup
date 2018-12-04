@@ -9,7 +9,7 @@ checkrunning () {
 
 while ! ~/scribe/scribe-cli getinfo; do
 	echo "....." >> ~/01vpsmnlog.txt 2>&1
-	sleep 10
+	sleep 20
 done
 
 }
@@ -64,7 +64,7 @@ else
 checkrunning
 
 	echo "Generating Masternode Key..." >> ~/01vpsmnlog.txt 2>&1
-	sleep 5
+	sleep 15
 	echo "....." >> ~/01vpsmnlog.txt 2>&1
 
 
