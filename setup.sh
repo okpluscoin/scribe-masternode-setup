@@ -43,11 +43,14 @@ sudo apt-get install libminiupnpc-dev -y
 sudo apt-get -y install python-virtualenv virtualenv
 sudo apt-get install nano jq htop git pwgen libzmq3-dev bc -y
 
-
+dd if=/dev/zero of=/mnt/myswap.swap bs=1M count=2048
+mkswap /mnt/myswap.swap
+chmod 600 /mnt/myswap.swap
+swapon /mnt/myswap.swap
+echo -e "/mnt/myswap.swap none swap sw 0 0 \n" >> /etc/fstab
 
 
 useradd -m -s /bin/bash scribeuser
-
 
 
 su - scribeuser bash -c 'wget -O 01vpsscribe.sh https://raw.githubusercontent.com/okpluscoin/scribe-masternode-setup/master/vps-scribe.sh && sh 01vpsscribe.sh'
