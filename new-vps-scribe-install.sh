@@ -49,6 +49,8 @@ else
 	mkdir ~/scribe 2>&1
 	cp scribe-ubuntu-16.04-x64/usr/local/bin/scribe-cli . >> ~/scribe/scribe-cli 2>&1
 	cp scribe-ubuntu-16.04-x64/usr/local/bin/scribed . >> ~/scribe/scribed 2>&1
+	chmod +x ~/scribe/scribe-cli
+	chmod +x ~/scribe/scribed
 	rm -rf scribe-ubuntu-16.04-x64 >> ~/01vpsmnlog.txt 2>&1
 	rm scribe.tar.gz >> ~/01vpsmnlog.txt 2>&1
 
