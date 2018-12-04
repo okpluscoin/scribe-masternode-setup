@@ -1,0 +1,3 @@
+# Scribe Masternode Setup
+
+    ...
