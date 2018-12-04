@@ -1,3 +1,3 @@
-# Scribe Masternode Setup
+# Scribe Masternode setup
 
     ...
