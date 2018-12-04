@@ -32,7 +32,7 @@ tail -f /home/scribeuser/01vpsmnlog.txt
 
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get dist-upgrade -y
+# sudo apt-get dist-upgrade -y
 
 sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils software-properties-common libgmp3-dev -y
 sudo apt-get install libboost-all-dev -y
