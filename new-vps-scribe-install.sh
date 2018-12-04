@@ -46,6 +46,7 @@ else
 	cd ~ >> ~/01vpsmnlog.txt 2>&1
 	wget -O scribe.tar.gz https://github.com/scribenetwork/scribe/releases/download/v0.2/scribe-ubuntu-16.04-x64.tar.gz >> ~/01vpsmnlog.txt 2>&1
 	tar -xvzf scribe.tar.gz >> ~/01vpsmnlog.txt 2>&1
+	mkdir scribe >> ~/scribe/scribe-cli 2>&1
 	cp scribe-ubuntu-16.04-x64/usr/local/bin/scribe-cli . >> ~/scribe/scribe-cli 2>&1
 	cp scribe-ubuntu-16.04-x64/usr/local/bin/scribed . >> ~/scribe/scribed 2>&1
 	rm -rf scribe-ubuntu-16.04-x64 >> ~/01vpsmnlog.txt 2>&1
